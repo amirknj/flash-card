@@ -12,3 +12,9 @@ class UpdateFlashCardSerializer(ModelSerializer):
     class Meta:
         model = FlashCard
         fields = ("question", "answer")
+
+
+class ListFlashCardSerializer(ModelSerializer):
+    class Meta:
+        model = FlashCard
+        fields = "__all__"
